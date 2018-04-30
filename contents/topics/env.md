@@ -9,7 +9,7 @@
 
 +++
 
-### Pythonダウンロード
+### ダウンロード
 [Python ダウンロードサイト @fa[external-link gp-download]](https://www.python.org/downloads/release/python-365/)
 
 OSとエディションに合ったものをダウンロード→インストール
@@ -18,22 +18,28 @@ OSとエディションに合ったものをダウンロード→インストー
 
 @title[インストール時注意点]
 
-* `for All Users`には、チェックを**入れない**
-* `Add Python Path`には、チェックを**入れる**
+### インストール時
+
+* `for All Users`は、チェックを**外す**
+* `Add Python Path`には、チェックを**付ける**
 
 +++
 
 @title[動作確認とか]
 
+### 起動確認
+
 * `Windows +　R`を押し、`cmd`と入力
-* `python`と入力  
+
+> python --version
+
+と入力。エラーが出なければOK。
+
+* `python --version`と入力  
 エラーが出なければOK
 
-* `python -m pip install --upgrade pip`と入力  
-`pip`というツールのバージョンを上げる
+* pipのバージョンアップ  
+> python -m pip install --upgrade pip
 
-+++
+pipは、Pythonのモジュールを管理するためのツール。
 
-@title[pipとは]
-
-`pip`とは、Pythonの便利なモジュールを使うためのツール。  
