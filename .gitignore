@@ -99,3 +99,8 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# local file ignore
+/scripts
+/test
+/.vscode
