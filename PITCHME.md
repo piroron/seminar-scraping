@@ -2,17 +2,13 @@
 
 2018年5月12日(土)
 
----?include=contents/topics/self-intro.md
-
 ---?include=contents/topics/env.md
-
----?include=contents/topics/pre-intro.md
 
 ---
 
-### 早速体験してみましょう！
+### スクレイピングとは
 
----?include=contents/topics/prepare.md
+---?include=contents/topics/scraping.md
 
 ---
 ### その１：文字列を入出力する

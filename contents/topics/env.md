@@ -25,18 +25,12 @@ OSとエディションに合ったものをダウンロード→インストー
 
 +++
 
-@title[動作確認とか]
+@title[起動確認等]
 
 ### 起動確認
-
-* `Windows +　R`を押し、`cmd`と入力
+`Windows +　R`を押し、`cmd`と入力
 
 > python --version
-
-と入力。エラーが出なければOK。
-
-* `python --version`と入力  
-エラーが出なければOK
 
 * pipのバージョンアップ  
 > python -m pip install --upgrade pip
