@@ -2,7 +2,7 @@
 Webにある情報を、抽出すること。  
 出典：Pythonによるクローラー&スクレイピング入門
 
-+++?image=assets/scraping.png&size=auto
+---?image=assets/scraping.png&size=auto
 
 +++
 
