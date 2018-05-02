@@ -8,6 +8,8 @@
 
 ### スクレイピングとは
 
++++?image=assets/scraping.png&size=auto
+
 ---?include=contents/topics/tips/scraping.md
 
 ---
