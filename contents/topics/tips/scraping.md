@@ -1,11 +1,9 @@
 ### スクレイピングとは
 Webにある情報を、抽出すること。  
 
-+++?image=assets/scraping.PNG
++++?image=assets/scraping.PNG&size=auto 90%
 
 @title[スクレイピング]
-
-![scraping](assets/scraping.png)
 
 +++
 
@@ -18,7 +16,7 @@ Webにある情報を、抽出すること。
 <li class="fragment">右クリック - ソースの表示 等</li>
 </ul>
 
-+++?image=assets/viewsource.PNG
++++?image=assets/viewsource.PNG&size=auto 90%
 
 @title[ソースの表示]
 
