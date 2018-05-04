@@ -6,9 +6,11 @@
 
 ---
 
-### スクレイピングとは
+### その０：前提となる知識
 
 +++?include=contents/topics/tips/scraping.md
+
+---?include=contents/topics/tips/web-intro.md
 
 ---
 ### その１：文字列を入出力する
