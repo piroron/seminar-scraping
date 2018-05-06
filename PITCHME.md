@@ -4,6 +4,8 @@
 
 ---?include=contents/topics/intro/seminar.md
 
+---
+
 ### その１：環境構築
 
 ---?include=contents/topics/env.md
@@ -20,4 +22,9 @@
 
 ### その３：単純なスクレイピング
 
-+++?include=contents/topics/tips/basic.md
++++?include=contents/topics/tips/1.md
+
+---
+
+### その４：まとめて取得
+
