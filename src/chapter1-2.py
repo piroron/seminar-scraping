@@ -2,7 +2,8 @@ import requests
 import lxml.html
 
 # HTMLソースを得る
-r = requests.get("http://www.shoeisha.co.jp/book/detail/9784798146072")
+url = "http://www.shoeisha.co.jp/book/detail/9784798146072"
+r = requests.get(url)
 html = r.text
 
 # HTMLをHtmlElementオブジェクトにする
