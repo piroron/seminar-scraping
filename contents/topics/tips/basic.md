@@ -4,11 +4,9 @@
 `pip`で、以下のモジュールを取得する。
 
 * Requests
-* lxml
-* cssselect
 
 ```
-pip install [名前]
+pip install requests
 ```
 
 +++
