@@ -1,4 +1,4 @@
-### プログラミング実線勉強会
+### プログラミング実践勉強会
 
 2018年5月12日(土)
 
@@ -8,7 +8,7 @@
 
 ### その１：環境構築
 
----?include=contents/topics/env.md
++++?include=contents/topics/env.md
 
 ---
 
@@ -28,3 +28,6 @@
 
 ### その４：まとめて取得
 
++++?include=contents/topics/tips/2.md
+
+---

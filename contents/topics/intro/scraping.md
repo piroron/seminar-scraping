@@ -8,6 +8,8 @@
 
 +++?image=assets/crawling.PNG&size=auto 70%
 
+@title[クローリング図]
+
 +++
 
 @title[スクレイピングとは]
@@ -17,4 +19,4 @@ Webページにある情報を、抽出すること。
 
 +++?image=assets/scraping.PNG&size=auto 70%
 
-@title[スクレイピング]
+@title[スクレイピング図]
