@@ -5,6 +5,8 @@
 
 * Requests
 
+コマンドラインで以下を実行。
+
 ```
 pip install requests
 ```
@@ -30,6 +32,19 @@ html = r.text
 
 +++
 
+@title[実習]
+
+### やりたいこと
+上記ページの「書名」を取得したい。
+
+考慮すべき事項
+
+* どうやってHTMLから「書名」を探すのか
+* どうやってプログラムからアクセスする？
+* etc
+
++++
+
 @title[HTMLの構成]
 
 ### HTMLの解説
@@ -52,21 +67,6 @@ HyperText Markup Language の略。
 ```
 
 +++
-
-@title[HTMLへのアクセス]
-
-### 扱い
-文字列として扱うと、プログラムで扱うのは大変。
-
-アクセスを簡単にする方法は用意されている。
-
-<ul>
-<li class="fragment">XPath</li>
-<li class="fragment">CSSセレクター</li>
-</ul>
-
-+++
-
 @title[HTML構造]
 
 ### 構造
@@ -78,7 +78,109 @@ HyperText Markup Language の略。
     Webサイトパフォーマンス実践入門  高速なWebページを作りたいあなたに
 </a>
 ```
+@[1-4](a(anchor)要素全体を指す)
 @[1-2](開始タグ。この場合、「aタグ」と呼ぶ)
 @[2](属性。hrefは、リンク先を指定する)
 @[3](タグの中身。この場合、リンクのテキストを指す)
 @[4](終了タグ。必ず「/タグ名」で記述する)
+
++++
+
+@title[HTMLへのアクセス]
+
+### 扱い
+文字列として、プログラムで扱うのは大変。
+
+ただし、アクセスを簡単にする方法は用意されている。  
+プログラムで扱う場合、大抵はこれらを使用する。
+
+<ul>
+<li class="fragment">**XPath**</li>
+<li class="fragment">CSSセレクター</li>
+</ul>
+
++++
+
+@title[XPath]
+
+### XPathとは
+
+例：ページ中のタイトルっぽい要素を取得
+
+```
+//*[@id="cx_contents_block"]/div/section/h1
+```
+
+意味
+
+<ul>
+<li class="fragment">IDが「cx_contents_block」の要素</li>
+<li class="fragment">その子要素のdiv(固まり)</li>
+<li class="fragment">その子要素のsection(一つのセクション)</li>
+<li class="fragment">その子要素のh1（見出し1）</li>
+</ul>
+
++++
+
+@title[XPathの取得]
+
+### 調べ方
+
+`Google Chrome`であれば、
+
+<ul>
+<li class="fragment">Webページの調べたい場所で右クリック</li>
+<li class="fragment">検証</li>
+<li class="fragment">開発者ツールが開く</li>
+<li class="fragment">反転している要素で右クリック</li>
+<li class="fragment">Copy - Copy XPath を選択</li>
+</ul>
+
+Note:
+ブラウザによって異なる点を強調
+
++++
+
+@title[Pythonからアクセス_準備]
+
+### プログラムからアクセスする（準備）
+`pip`で、以下のモジュールを取得する。[ヘルプ](http://lxml.de/)
+
+* lxml
+
+コマンドラインで以下を実行。
+
+```
+pip install lxml
+```
+
+`lxml`は、htmlへのアクセスを簡略化してくれるモジュール。  
+`XPath`を指定したら、その要素を取得してくれる。
+
++++
+
+@title[Pythonからアクセス]
+
+### プログラムからアクセスする
+
+```python
+import requests
+import lxml.html
+
+# HTMLソースを得る
+url = "http://www.shoeisha.co.jp/book/detail/9784798146072"
+r = requests.get(url)
+html = r.text
+
+# HTMLをHtmlElementオブジェクトにする
+root = lxml.html.fromstring(html)
+
+# XPathを指定して該当する要素のリストを得る
+titleH1 = root.xpath("//*[@id=\"cx_contents_block\"]/div/section/h1")
+
+# リストの1番目のテキストを表示する
+print(titleH1[0].text)
+```
+@[2](lxml.htmlを遣えるようにする)
+@[10](受信したhtml文字列から、アクセス用クラスを作成)
+@[13](XPathを指定してアクセス)

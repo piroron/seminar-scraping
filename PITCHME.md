@@ -1,12 +1,16 @@
-### プログラミング入門勉強（体験）会
+### プログラミング実線勉強会
 
 2018年5月12日(土)
+
+---?include=contents/topics/intro/seminar.md
+
+### その１：環境構築
 
 ---?include=contents/topics/env.md
 
 ---
 
-### その０：前提となる知識
+### その２：前提となる知識
 
 +++?include=contents/topics/intro/scraping.md
 
@@ -14,6 +18,6 @@
 
 ---
 
-### その１：単純なスクレイピング
+### その３：単純なスクレイピング
 
 +++?include=contents/topics/tips/basic.md
