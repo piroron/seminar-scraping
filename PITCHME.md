@@ -31,3 +31,9 @@
 +++?include=contents/topics/tips/2.md
 
 ---
+
+### その５：データの管理
+
++++?include=contents/topics/tips/3.md
+
+---
