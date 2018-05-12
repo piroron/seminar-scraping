@@ -32,9 +32,11 @@ OSとエディションに合ったものをダウンロード→インストー
 
 ### インストール時
 
-* `for All Users`は、チェックを**外す**
+* `for All Users`は、チェックを**外す**  
 「仮想環境（後述）」を作るなら、チェックありでも支障はない
 * `Add Python Path`には、チェックを**付ける**
+
++++?image=assets/pyinstall.PNG&size=auto 70%
 
 +++
 
@@ -104,7 +106,7 @@ python -m pip install --upgrade pip
 
 +++
 
-@title[Jupyter Notebook]
+@title[Jupyter Notebook1]
 ### エディタのインストール
 以下のコマンドを入力
 
@@ -112,4 +114,22 @@ python -m pip install --upgrade pip
 pip install jupyter
 ```
 
++++
 
+@title[Jupyter Notebook2]
+
+### 起動
+
+以下のコマンドを入力
+
+```ps1
+jupyter notebook
+```
+
+すると、ブラウザでノートが起動する。
+
+続いて、ノートを作成する。
+
++++?image=assets/newnote.PNG&size=auto 70%
+
+@title[Jupyter Notebook3]
