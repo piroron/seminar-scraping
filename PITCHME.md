@@ -10,6 +10,8 @@
 
 +++?include=contents/topics/env.md
 
++++?include=contents/topics/ps1.md
+
 ---
 
 ### その２：前提となる知識
