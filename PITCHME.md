@@ -10,7 +10,7 @@
 
 +++?include=contents/topics/env.md
 
-+++?include=contents/topics/ps1.md
++++?include=contents/topics/intro/ps1.md
 
 ---
 
