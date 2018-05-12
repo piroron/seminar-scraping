@@ -10,6 +10,26 @@
 
 +++?include=contents/topics/env.md
 
++++?include=contents/topics/intro/ps1.md
+
+---
+
+### その２：前提となる知識
+
++++?include=contents/topics/intro/scraping.md
+
++++?include=contents/topics/intro/web.md
+
+---
+
+### その３：単純なスクレイピング
+
++++?include=contents/topics/tips/1.md
+
+---
+
++++?include=contents/topics/intro/ps1.md
+
 ---
 
 ### その２：前提となる知識
