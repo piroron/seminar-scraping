@@ -7,18 +7,18 @@
 
 +++
 
-@tiitle[起動]
+@title[起動]
 
-```ps1
-[仮想環境パス]\Scripts\Activate.ps1
-```
+* PowerShellでPython起動
 
-例：
+下記パスは、自身の環境に合わせてください。
 
 ```ps1
 cd c:\seminar
 .\myvenv\Scripts\Activate.ps1
 ```
+@[1](Jupyter等があるパスに移動)
+@[2](仮想環境をアクティブにする)
 
 +++
 
