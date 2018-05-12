@@ -6,6 +6,14 @@
 ## 勉強会使用環境
 クライアントに構築する。
 
+## スライド表示
+
+### 本番
+https://gitpitch.com/piroron/seminar-scraping
+
+### ブランチ
+https://gitpitch.com/piroron/seminar-scraping/making
+
 ## 記法メモ
 
 `---`
@@ -76,3 +84,13 @@ Note:
 
 なお、サブディレクトリのスライドで、サブスライドを参照する場合、  
 サブスライドへのパスは**ルートからの相対**で記述する。  
+
+## リストの動的表示
+
+```html
+<ul>
+<li class="fragment">数値と文字列は、扱いが違う！</li>
+<li class="fragment">これらの区別を**型**という！</li>
+<li class="fragment">文字型、数値型、論理型etc...</li>
+</ul>
+```

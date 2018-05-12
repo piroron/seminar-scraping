@@ -8,9 +8,6 @@
 * エディタ  
 [Visual Studio Code](https://www.microsoft.com/ja-jp/dev/products/code-vs.aspx)
 
-* 画像作成  
-[draw.io](https://www.draw.io/)
-
 * ソース管理  
 [GitHub](https://github.com/)
 
@@ -18,7 +15,10 @@
 
 @title[参考文献等]
 
+* 書籍
+[Pythonによるクローラー＆スクレイピング入門](https://honto.jp/ebook/pd_28763986.html)
+
 * 参考サイト  
 [Python チュートリアル](https://docs.python.jp/3/tutorial/index.html)  
-[paizaラーニング Python3編](https://paiza.jp/works/python3/primer)  
-[paiza io](https://paiza.io/ja)
+[Cloud 9](https://paiza.io/ja)
+[lxml公式ページ](http://lxml.de/)
